@@ -40,7 +40,7 @@ function start() {
     getWebHost((webHost) => {
         if (!webHost) {
             console.error("Không thể lấy WEB_HOST. Sẽ thử lại sau 5 giây...");
-            return setTimeout(start, 5000); // tự gọi lại nếu lỗi
+            return setTimeout(start, 30000); // tự gọi lại nếu lỗi
         }
 
         const url = "1997-" + webHost;
